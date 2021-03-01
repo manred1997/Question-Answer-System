@@ -1,0 +1,11 @@
+__pycache__/
+Reader/__pycache__/
+Reader/electra_base_uncased/
+Reader/electra_QA/
+Reader/weight_electra/
+Retrieval/__pycache__/
+Retrieval/ctx_encoder/
+Retrieval/ctx_tokenizer/
+Retrieval/question_encoder/
+Retrieval/question_tokenizer/
+SquadV2_data/

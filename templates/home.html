@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Question Answer System</title>
+    </head>
+    <body>
+        <div class="header" style="text-align: center; width: 100%; float: left;font-size: 20px; height: 70px;">
+            <h1 >Question Answer System</h1>
+        </div>
+        <form action="" method="POST" style="width: 100%; margin-top: 10px; float: left;">
+            <input type="text" name="question" style="width: 80%;height: 30px; float: left; border-radius: 10px 10px 10px 10px;">
+            <input type=submit value=Submit style="width: 150px;height: 35px; float: left; border-radius: 10px 10px 10px 10px; margin-left: 20px;">
+        </form>
+        {% if q%}
+        <p style="float: left;width: 100%; margin-top: 10px; font-size: 15px;height: 10px;">Question: <b>{{q}}</b></p>        
+        {% endif %}
+
+        {% if q_a_s_s %}
+        {% for q_a_s in q_a_s_s %}
+        <div style="width: 100%; float: left; border-bottom-style: double; border-bottom-left-radius:10px ;border-bottom-right-radius:10px ;">
+            <p style="float: left;width: 100%; margin-top: 10px; font-size: 15px;height: 10px;margin-left:20px"><b>URL :</b> {{q_a_s[3]}}</p>
+            <b style="font-size: 15px; float: left; margin-left: 20px;width: 100%;">Answer : <b style="color: green;">{{q_a_s[1]}}</b></b>            
+            <p style="font-size: 15px; float: left; margin-left: 20px;"><b>Passage : </b> {{q_a_s[0]}} <b style="color: red;">{{q_a_s[1]}}</b> {{q_a_s[2]}}</p>
+        </div>
+        {% endfor %}
+        {% endif %}
+    </body>
+</html>
