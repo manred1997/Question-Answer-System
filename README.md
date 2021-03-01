@@ -42,6 +42,7 @@ python Reader/download_pretrained.py
 ```
 python Reader/train.py
 ```
+#### We trained ELECTRA model on SQuADv2. You can download weights model [here](https://drive.google.com/file/d/1AqHeCygJMZf3FRa_-gAYEHovB1Sklqm0/view)
 
 ### Result
 | Epoch   | Loss   | Exact Match |
